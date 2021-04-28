@@ -1,0 +1,22 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1 {
+  letter-spacing: 0.03em;
+}
+
+.font--base {
+  font-family: "Work Sans";
+}
+
+.font--headings {
+  font-family: "Ogg";
+}
+
+@media screen and (max-width: 575.98px) {
+  header .logo img {
+    max-width: 221px;
+  }
+}
