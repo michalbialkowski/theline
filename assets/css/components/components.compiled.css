@@ -16674,12 +16674,6 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .content--slider .content--slider--item:nth-child(1) .layer--image .width--rest.ratio img {
-    object-position: top left;
-  }
-}
-
 .content--slider .content--slider--item:nth-child(2) .layer--mobile h2 {
   hyphens: auto;
 }
