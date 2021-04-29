@@ -99,3 +99,7 @@ header .navbar__desktop .nav__menu.collapsed {
 #menu__modal .lead {
   font-weight: 400;
 }
+
+#privacy__modal .btn__menu {
+  box-shadow: none !important;
+}
