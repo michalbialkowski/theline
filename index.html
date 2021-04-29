@@ -21,7 +21,7 @@
     <div>
         <header>
             <div>
-                <div class="d-none d-lg-block py-3" id="navbar__desktop">
+                <div class="bg-white d-none d-lg-block py-3 fixed-top navbar__desktop">
                     <div class="container-fluid">
                         <div class="row justify-content-between align-items-center flex-nowrap">
                             <div class="col-md-auto">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white d-lg-none py-3 fixed-top" id="navbar__mobile">
+                <div class="bg-white d-lg-none py-3 navbar__mobile fixed-top">
                     <div class="container-fluid">
                         <div class="row justify-content-between align-items-center">
                             <div class="col">
@@ -119,13 +119,13 @@
                                             <div>
                                                 <p class="text-center d-md-none">przedsprzedaż rusza za<br></p>
                                                 <div class="d-flex justify-content-center mb--60">
-                                                    <p class="d-flex justify-content-center align-items-baseline mb-0 timer--time"><span class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--days">220</strong><span>dni</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="font--base display-4">:</strong></span>
+                                                    <p class="d-flex justify-content-center align-items-baseline mb-0 timer--time"><span class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--days">0</strong><span>dni</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="font--base display-4">:</strong></span>
                                                         <span
-                                                            class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--hours">24</strong><span>godzin</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="display-4">:</strong></span>
+                                                            class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--hours">0</strong><span>godzin</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="display-4">:</strong></span>
                                                             <span
-                                                                class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--minutes">24</strong><span>minut</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="display-4">:</strong></span>
+                                                                class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--minutes">0</strong><span>minut</span></span><span class="d-flex flex-column justify-content-center align-items-center px-2 px-xl-3"><strong class="display-4">:</strong></span>
                                                                 <span
-                                                                    class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--seconds">24</strong><span>sekund</span></span>
+                                                                    class="d-flex flex-column justify-content-center align-items-center"><strong class="display-4 timer--time--seconds">0</strong><span>sekund</span></span>
                                                     </p>
                                                 </div>
                                                 <div class="d-flex justify-content-center"><button class="btn btn-primary text-uppercase" type="button"><img class="mr-3" src="assets/img/icon-bell.svg"><span>Powiadom mnie</span></button></div>
@@ -238,6 +238,51 @@
         </main>
     </div>
     <div>
+        <div class="logo__overlay navbar--invert">
+            <header>
+                <div>
+                    <div class="bg-white d-none d-lg-block py-3 fixed-top navbar__desktop">
+                        <div class="container-fluid">
+                            <div class="row justify-content-between align-items-center flex-nowrap">
+                                <div class="col-md-auto">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto"><button class="btn btn__menu p-0" type="button"><img class="icon--menu" src="assets/img/icon-menu.svg"><img class="icon--close" src="assets/img/icon-close.svg"></button></div>
+                                        <div class="col-auto px-0">
+                                            <ul class="nav text-uppercase flex-nowrap nav__menu collapsed">
+                                                <li class="nav-item"><a class="nav-link text-body link__inwestycja px-2" href="#">Inwestycja</a></li>
+                                                <li class="nav-item"><a class="nav-link text-body px-2 link__przedsprzedaz" href="#">Przedsprzedaż</a></li>
+                                                <li class="nav-item"><a class="nav-link text-body px-2 link__apartamenty" href="#">Apartamenty</a></li>
+                                                <li class="nav-item"><a class="nav-link text-body px-2 link__kontakt" href="#">Kontakt</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto"><a class="d-block logo" href="/"><img class="img-fluid" src="assets/img/theline-logo.svg"></a></div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="nav text-lowercase">
+                                        <li class="nav-item"><a class="nav-link text-body" href="#">Facebook</a></li>
+                                        <li class="nav-item"><a class="nav-link text-body" href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white d-lg-none py-3 navbar__mobile fixed-top">
+                        <div class="container-fluid">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col">
+                                    <div class="row justify-content-between align-items-center flex-nowrap">
+                                        <div class="col-auto"><a class="logo" href="/"><img class="img-fluid d-block" src="assets/img/theline-logo.svg"></a></div>
+                                        <div class="col-auto"><button class="btn btn__menu p-0" type="button" data-toggle="modal" data-target="#menu__modal"><img src="assets/img/icon-menu.svg"></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="d-flex justify-content-center align-items-center p-3"><img class="img-fluid" src="assets/img/theline-logo-lg-white.svg"></main>
+        </div>
         <div class="modal fade modal--fullscreen" role="dialog" tabindex="-1" id="menu__modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -278,6 +323,7 @@
     <script src="assets/js/triggers/flickity.js"></script>
     <script src="assets/js/triggers/sticky.js"></script>
     <script src="assets/js/components/menu.js"></script>
+    <script src="assets/js/components/overlay.js"></script>
     <script src="assets/js/components/timer.js"></script>
     <script src="assets/js/triggers/content-slider.js"></script>
 </body>

@@ -16701,3 +16701,34 @@
     display: none;
   }
 }
+
+.logo__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: black;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.logo__overlay.navbar--invert header .fixed-top {
+  filter: invert(1);
+  z-index: 20000 !important;
+}
+
+.logo__overlay.navbar--invert main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: black;
+}
+
+.logo__overlay.overlay--transparent {
+  opacity: 0;
+}
