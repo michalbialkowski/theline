@@ -16733,6 +16733,32 @@
   opacity: 0;
 }
 
+.logo__overlay .logo__image {
+  max-width: calc(100vw - 30px);
+  width: 732px;
+}
+
+.logo__overlay .logo__image > div:nth-child(1) {
+  width: 33.9153%;
+  height: 100%;
+}
+
+.logo__overlay .logo__image > div:nth-child(2) {
+  width: 0%;
+  height: 100%;
+  margin: 0 5%;
+  transition: width 1s ease-in-out;
+}
+
+.logo__overlay .logo__image > div:nth-child(2).expanded {
+  width: 23.28%;
+}
+
+.logo__overlay .logo__image > div:nth-child(3) {
+  width: 35.2691%;
+  height: 100%;
+}
+
 .modal {
   z-index: 30000;
 }

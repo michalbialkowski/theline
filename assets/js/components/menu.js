@@ -83,6 +83,19 @@ $(`${menu_modal} .link__kontakt`).on('click', function(event) {
 	$(menu_modal).modal('hide');
 });
 
+$(`#przedsprzedaz .link__kontakt`).on('click', function(event) {
+	event.preventDefault();
+	if (screenWidth() >= 768) {
+		$(menu_content_slider).flickity('select', 3);
+	} else {
+		let dest = $(this).attr("href");
+		$("html, body").animate({
+			'scrollTop': $(dest).offset().top - 70
+		}, 2000);
+	}
+	$(menu_modal).modal('hide');
+});
+
 function screenWidth() {
 	let width = $(window).width();
 	return width;
