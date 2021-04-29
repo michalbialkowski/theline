@@ -3,6 +3,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 h1, .h1 {
   letter-spacing: 0.03em;
 }

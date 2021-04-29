@@ -16532,6 +16532,7 @@
 .modal--fullscreen .modal-content {
   border: none;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .modal--styled .modal-dialog .modal-header > button {
