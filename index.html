@@ -20,20 +20,42 @@
 <body>
     <div>
         <header>
-            <div class="py-3">
-                <div class="container-fluid">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md-auto">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-auto order-1 order-md-2"><a class="logo" href="#"><img class="img-fluid" src="assets/img/theline-logo.svg"></a></div>
-                                <div class="col-auto order-2 order-md-1"><button class="btn p-0" type="button"><img src="assets/img/icon-menu.svg"></button></div>
+            <div>
+                <div class="d-none d-lg-block py-3" id="navbar__desktop">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between align-items-center flex-nowrap">
+                            <div class="col-md-auto">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-auto"><button class="btn btn__menu p-0" type="button"><img class="icon--menu" src="assets/img/icon-menu.svg"><img class="icon--close" src="assets/img/icon-close.svg"></button></div>
+                                    <div class="col-auto px-0">
+                                        <ul class="nav text-uppercase flex-nowrap nav__menu collapsed">
+                                            <li class="nav-item"><a class="nav-link text-body link__inwestycja px-2" href="#">Inwestycja</a></li>
+                                            <li class="nav-item"><a class="nav-link text-body px-2 link__przedsprzedaz" href="#">Przedsprzedaż</a></li>
+                                            <li class="nav-item"><a class="nav-link text-body px-2 link__apartamenty" href="#">Apartamenty</a></li>
+                                            <li class="nav-item"><a class="nav-link text-body px-2 link__kontakt" href="#">Kontakt</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto"><a class="d-block logo" href="/"><img class="img-fluid" src="assets/img/theline-logo.svg"></a></div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <ul class="nav text-lowercase">
+                                    <li class="nav-item"><a class="nav-link text-body" href="#">Facebook</a></li>
+                                    <li class="nav-item"><a class="nav-link text-body" href="#">Instagram</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <ul class="nav text-lowercase">
-                                <li class="nav-item"><a class="nav-link text-body" href="#">Facebook</a></li>
-                                <li class="nav-item"><a class="nav-link text-body" href="#">Instagram</a></li>
-                            </ul>
+                    </div>
+                </div>
+                <div class="d-lg-none py-3" id="navbar__mobile">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col">
+                                <div class="row justify-content-between align-items-center flex-nowrap">
+                                    <div class="col-auto"><a class="logo" href="#"><img class="img-fluid d-block" src="assets/img/theline-logo.svg"></a></div>
+                                    <div class="col-auto"><button class="btn btn__menu p-0" type="button"><img src="assets/img/icon-menu.svg"></button></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,6 +249,7 @@
     <script src="assets/js/triggers/masonry.js"></script>
     <script src="assets/js/triggers/flickity.js"></script>
     <script src="assets/js/triggers/sticky.js"></script>
+    <script src="assets/js/components/menu.js"></script>
     <script src="assets/js/components/timer.js"></script>
     <script src="assets/js/triggers/content-slider.js"></script>
 </body>

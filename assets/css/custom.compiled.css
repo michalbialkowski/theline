@@ -15,8 +15,55 @@ h1, .h1 {
   font-family: "Ogg";
 }
 
+header {
+  font-size: 0.8125rem;
+}
+
+header #navbar__desktop .btn__menu {
+  box-shadow: none !important;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+header #navbar__desktop .btn__menu img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header #navbar__desktop .btn__menu .icon--menu {
+  opacity: 1;
+  transition: opacity .75s ease-in-out .5s;
+}
+
+header #navbar__desktop .btn__menu .icon--close {
+  opacity: 0;
+  transition: opacity .75s ease-in-out;
+}
+
+header #navbar__desktop .btn__menu.menu--opened .icon--menu {
+  opacity: 0;
+  transition: opacity .75s ease-in-out;
+}
+
+header #navbar__desktop .btn__menu.menu--opened .icon--close {
+  opacity: 1;
+  transition: opacity .75s ease-in-out .5s;
+}
+
+header #navbar__desktop .nav__menu {
+  max-width: 100vw;
+  overflow: hidden;
+  transition: max-width 1.5s ease-in-out;
+}
+
+header #navbar__desktop .nav__menu.collapsed {
+  max-width: 0vw;
+}
+
 @media screen and (max-width: 575.98px) {
-  header .logo img {
+  header #navbar__mobile .logo img {
     max-width: 221px;
   }
 }

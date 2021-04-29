@@ -16530,6 +16530,7 @@
 }
 
 .modal--fullscreen .modal-content {
+  border: none;
   min-height: 100vh;
 }
 
