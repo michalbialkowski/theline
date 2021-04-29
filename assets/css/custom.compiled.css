@@ -15,12 +15,21 @@ h1, .h1 {
   font-family: "Ogg";
 }
 
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 70px;
+  }
+}
+
 header {
   font-size: 0.8125rem;
 }
 
-header #navbar__desktop .btn__menu {
+header .btn__menu {
   box-shadow: none !important;
+}
+
+header #navbar__desktop .btn__menu {
   width: 24px;
   height: 24px;
   position: relative;
@@ -66,4 +75,12 @@ header #navbar__desktop .nav__menu.collapsed {
   header #navbar__mobile .logo img {
     max-width: 221px;
   }
+}
+
+#menu__modal .btn__menu {
+  box-shadow: none !important;
+}
+
+#menu__modal .lead {
+  font-weight: 400;
 }

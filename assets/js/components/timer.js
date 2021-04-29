@@ -25,5 +25,3 @@ $(window).on('load', function() {
 		$('.timer--time--seconds').text(seconds);
 	}, 1000);
 });
-
-console.log('ok');

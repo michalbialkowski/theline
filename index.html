@@ -47,13 +47,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-lg-none py-3" id="navbar__mobile">
+                <div class="bg-white d-lg-none py-3 fixed-top" id="navbar__mobile">
                     <div class="container-fluid">
                         <div class="row justify-content-between align-items-center">
                             <div class="col">
                                 <div class="row justify-content-between align-items-center flex-nowrap">
                                     <div class="col-auto"><a class="logo" href="#"><img class="img-fluid d-block" src="assets/img/theline-logo.svg"></a></div>
-                                    <div class="col-auto"><button class="btn btn__menu p-0" type="button"><img src="assets/img/icon-menu.svg"></button></div>
+                                    <div class="col-auto"><button class="btn btn__menu p-0" type="button" data-toggle="modal" data-target="#menu__modal"><img src="assets/img/icon-menu.svg"></button></div>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
             <div class="content--slider--container">
                 <div class="content--slider--wrapper">
                     <div class="content--slider py-3 py-md-0">
-                        <div class="content--slider--item py-3 py-md-0">
+                        <div id="inwestycja" class="content--slider--item py-3 py-md-0">
                             <div class="container-fluid">
                                 <div class="row no-gutters flex-lg-nowrap">
                                     <div class="col-12 d-md-none order-1 layer--mobile">
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content--slider--item py-3 py-md-0">
+                        <div id="przedsprzedaz" class="content--slider--item py-3 py-md-0">
                             <div class="container-fluid">
                                 <div class="row no-gutters flex-lg-nowrap">
                                     <div class="col-12 d-md-none order-1 layer--mobile">
@@ -135,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content--slider--item py-3 py-md-0">
+                        <div id="apartamenty" class="content--slider--item py-3 py-md-0">
                             <div class="container-fluid">
                                 <div class="row no-gutters flex-lg-nowrap">
                                     <div class="col-lg-8 col-xl-7 d-md-none order-1 layer--mobile">
@@ -166,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content--slider--item py-3 py-md-0">
+                        <div id="kontakt" class="content--slider--item py-3 py-md-0">
                             <div class="container-fluid">
                                 <div class="row no-gutters flex-lg-nowrap">
                                     <div class="col-12 d-md-none order-1 layer--mobile">
@@ -236,7 +236,35 @@
                 </div>
             </div>
         </main>
-        <footer></footer>
+    </div>
+    <div>
+        <div class="modal fade modal--fullscreen" role="dialog" tabindex="-1" id="menu__modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex p-0">
+                        <div class="row no-gutters flex-column justify-content-between w-100">
+                            <div class="col">
+                                <div class="d-flex justify-content-end p-3"><button class="btn btn__menu p-0" type="button" data-dismiss="modal"><img src="assets/img/icon-close.svg"></button></div>
+                            </div>
+                            <div class="col d-flex justify-content-center p-3">
+                                <ul class="nav flex-column text-uppercase lead">
+                                    <li class="nav-item"><a class="nav-link link__inwestycja" href="#inwestycja">Inwestycja</a></li>
+                                    <li class="nav-item"><a class="nav-link link__przedsprzedaz" href="#przedsprzedaz">Przedsprzedaż</a></li>
+                                    <li class="nav-item"><a class="nav-link link__apartamenty" href="#apartamenty">Apartamenty</a></li>
+                                    <li class="nav-item"><a class="nav-link link__kontakt" href="#kontakt">Kontakt</a></li>
+                                </ul>
+                            </div>
+                            <div class="col p-3">
+                                <ul class="nav text-lowercase justify-content-center">
+                                    <li class="nav-item"><a class="nav-link text-body" href="#">Facebook</a></li>
+                                    <li class="nav-item"><a class="nav-link text-body" href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
