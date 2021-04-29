@@ -16732,3 +16732,7 @@
 .logo__overlay.overlay--transparent {
   opacity: 0;
 }
+
+.modal {
+  z-index: 30000;
+}
