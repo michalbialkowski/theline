@@ -11,6 +11,14 @@ $(window).on('load', function() {
 		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+		if (days < 10) {
+			days = '0' + days;
+		}
+		
+		if (hours < 10) {
+			hours = '0' + hours;
+		}
+		
 		if (seconds < 10) {
 			seconds = '0' + seconds;
 		}

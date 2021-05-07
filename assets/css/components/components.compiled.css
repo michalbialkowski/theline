@@ -16576,7 +16576,7 @@
 .content--slider .content--slider--item .container-fluid {
     display: flex;
     height: calc(100vh - 120px);
-    max-height: 600px;
+    max-height: 700px;
   }
   .content--slider .content--slider--item .container > .row,
 .content--slider .content--slider--item .container-fluid > .row {
@@ -16587,7 +16587,7 @@
 @media screen and (min-width: 1440px) {
   .content--slider .content--slider--item .container,
 .content--slider .content--slider--item .container-fluid {
-    max-height: calc(100vh - 120px);
+    max-height: 800px;
   }
 }
 
@@ -16616,6 +16616,13 @@
 .content--slider .content--slider--item .container .layer--content > div,
 .content--slider .content--slider--item .container-fluid .layer--content > div {
   width: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+  .content--slider .content--slider--item .container .layer--content .h1,
+.content--slider .content--slider--item .container-fluid .layer--content .h1 {
+    hyphens: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -16710,7 +16717,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1439.98px) {
   .content--slider .content--slider--item:nth-child(1) .layer--content .h1 {
     position: relative;
-    top: -35px;
+    top: -60px;
   }
 }
 
@@ -16725,6 +16732,13 @@
   .content--slider .content--slider--item:nth-child(1) .layer--content .h1 {
     position: relative;
     top: -50px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .content--slider .content--slider--item:nth-child(2) {
+    background: white;
+    filter: invert(1);
   }
 }
 
