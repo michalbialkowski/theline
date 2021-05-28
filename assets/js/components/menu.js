@@ -86,7 +86,7 @@ $(`${menu_modal} .link__kontakt`).on('click', function(event) {
 $(`#przedsprzedaz .link__kontakt`).on('click', function(event) {
 	event.preventDefault();
 	if (screenWidth() >= 768) {
-		$(menu_content_slider).flickity('select', 3);
+		$(menu_content_slider).flickity('select', 1);
 	} else {
 		let dest = $(this).attr("href");
 		$("html, body").animate({
