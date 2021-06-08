@@ -16403,8 +16403,13 @@ body > div {
 @media (min-width: 992px) {
   .content--slider .content--slider--item > div {
     min-width: 600px;
-    max-height: 575px;
+    max-height: 660px;
     height: 100%;
+  }
+}
+@media (min-width: 992px) and (max-height: 800px) {
+  .content--slider .content--slider--item > div {
+    max-height: 575px;
   }
 }
 .content--slider .content--slider--item .container,
@@ -16632,4 +16637,10 @@ body > div {
 
 .modal {
   z-index: 30000;
+}
+
+@media (min-height: 900px) {
+  .navbar__desktop > div {
+    padding: 45px !important;
+  }
 }

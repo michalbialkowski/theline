@@ -1,5 +1,5 @@
 $(window).on('load', function() {
-	let countDownDateString = '2021-07-01T12:00:00';
+	let countDownDateString = '2021-08-16T12:00:00';
 	
 	var countDownDate = new Date(countDownDateString).getTime();
 	var x = setInterval(function() {

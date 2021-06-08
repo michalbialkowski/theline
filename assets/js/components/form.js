@@ -2,7 +2,7 @@ function sendMail(form_id, btn_class, process_class, success_class, error_class)
 	$(form_id).submit(function(event) {
 		event.preventDefault();
 		
-		$(form_id).find('button[type="submit"] span').html('Wysyłanie formularza…');
+		// $(form_id).find('button[type="submit"] span').html('Wysyłanie formularza…');
 		
 		$(form_id).find('button[type="submit"]').removeClass(btn_class);
 		$(form_id).find('button[type="submit"]').addClass(process_class);
@@ -29,10 +29,14 @@ function sendMail(form_id, btn_class, process_class, success_class, error_class)
 					$(form_id).find('select').attr("disabled", true);
 					$(form_id).find('button[type="submit"]').attr("disabled", true);
 				} else {
-					$(form_id).find('button[type="submit"] span').html('Wystąpił błąd, odśwież stronę, aby spróbować ponownie');
-					
+					// $(form_id).find('button[type="submit"] span').html('Wystąpił błąd, odśwież stronę, aby spróbować ponownie');
+
 					// $(form_id).find('button[type="submit"]').removeClass(process_class);
 					// $(form_id).find('button[type="submit"]').addClass(error_class);
+					
+					$('.fom__area__confirmation').removeClass('d-none');
+					$('.form__area__submit').removeClass('d-flex');
+					$('.form__area__submit').addClass('d-none');
 				}
 			}
 		});
